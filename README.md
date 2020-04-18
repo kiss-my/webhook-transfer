@@ -34,6 +34,12 @@ Now follow these steps:
 ## Deployment
 * Run the server using `yarn start` or use the Docker image `kissmy/webhook-transfer`  
 
+## Disclaimer
+This app works if your webhook works, so please test your endpoints before raising an issue.  
+It's not thoroughly tested nor has any kind of error handling (might have in the future if someone else than us uses it).  
+It is provided "as is" but may evolve into something more robust if specific use cases arise in the future.
+
+
 ## Contribute
 Issues, PR's and enhancement ideas are welcome. While this project suits us for our current usage, we're doing our 
 best to be reactive to any activity in this repository.  
