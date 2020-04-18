@@ -1,0 +1,23 @@
+{
+  "name": "webhook-transfer",
+  "version": "1.0.0",
+  "description": "A dead-simple Express.js server to forward a single POST payload to an unlimited number of webhooks.",
+  "main": "index.js",
+  "author": "Michel Tomas @kissmy",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
