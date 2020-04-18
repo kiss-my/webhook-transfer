@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webhook-transfer
+spec:
+  selector:
+    matchLabels:
+      app: webhook-transfer
+  template:
+    metadata:
+      labels:
+        app: webhook-transfer
+    spec:
+      containers:
+      - name: webhook-transfer
+        image: kissmy/webhook-transfer
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 3000
