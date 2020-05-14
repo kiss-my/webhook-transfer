@@ -17,6 +17,10 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json())
 
+app.get('/healthz', (req, res) => {
+  res.status(200).send('OK')
+})
+
 app.post('/relay', async (req, res) => {
   if (!req.query.urls) {
     res.status(400).send('No `urls[]` param found, please check your configuration.')
