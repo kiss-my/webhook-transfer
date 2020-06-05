@@ -31,7 +31,7 @@ app.post('/relay', async (req, res) => {
   const urls = req.query.urls.map(url => decodeURI(url))
 
   
-  await Promise.all(urls.map(url => axios.post(url, req.body.payload, { headers: req.headers })))
+  await Promise.all(urls.map(url => axios.post(url, req.body.payload, { headers: { 'Content-Type': 'application/json' } })))
     .catch((e) => {
       console.log(e)
       console.log(e.response)
