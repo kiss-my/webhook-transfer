@@ -1,6 +1,6 @@
 {
   "name": "webhook-transfer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A dead-simple Express.js server to forward a single POST payload to an unlimited number of webhooks.",
   "main": "index.js",
   "author": "Michel Tomas @kissmy",
